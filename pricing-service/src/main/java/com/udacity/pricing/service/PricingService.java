@@ -1,6 +1,7 @@
 package com.udacity.pricing.service;
 
 import com.udacity.pricing.domain.price.Price;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
