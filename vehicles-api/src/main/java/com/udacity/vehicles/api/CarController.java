@@ -86,7 +86,8 @@ class CarController {
         if(carService.findById(id) !=null){
             car.setId(id);
         }
-        Resource<Car> resource = assembler.toResource(car);
+        Car updatedCar = carService.save(car);
+        Resource<Car> resource = assembler.toResource(updatedCar);
         return ResponseEntity.ok(resource);
     }
 
